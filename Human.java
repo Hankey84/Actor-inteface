@@ -1,7 +1,7 @@
-public class Human extends Actor{
-    
-    public Human (String name){
-        this.name = name;
+public class Human extends Actor {
+
+    public Human(String name) {
+        this.name= name;
     }
 
     @Override
@@ -11,26 +11,29 @@ public class Human extends Actor{
     }
 
     @Override
-    public void setMakeOrder() {
-        isMakeOrder = true;       
+    public void setMakeOrder(boolean isMakeOrder) {
+        this.isMakeOrder = isMakeOrder;
+
     }
 
     @Override
-    public void setTakeOrder() {
-        isTakeOrder = true;
-        
+    public void setTakeOrder(boolean isTakeOrder) {
+        this.isTakeOrder = isTakeOrder;
+
     }
 
     @Override
     public boolean isMakeOrder() {
-
         return isMakeOrder;
     }
 
     @Override
     public boolean isTakeOrder() {
-
         return isTakeOrder;
     }
 
+    @Override
+    public String toString() {
+        return getName();
+    }
 }

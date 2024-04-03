@@ -1,8 +1,7 @@
  interface ActorBehavior {
 
-    void setMakeOrder();
-    void setTakeOrder();
+    void setMakeOrder(boolean isMakeOrder);
+    void setTakeOrder(boolean isTakeOrder);
     boolean isMakeOrder();
     boolean isTakeOrder();
-
 }
